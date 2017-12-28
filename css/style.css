@@ -1,6 +1,241 @@
 @charset "UTF-8";
 
-
 body {
   background: #fff;
+  text-align: center;
+  min-width: 640px;
+}
+header {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: left;
+}
+header img {
+  width: auto;
+  height: 65px;
+}
+header nav {
+  float: right;
+}
+header li {
+  float: left;
+  padding: 0 35px;
+  line-height: 65px;
+}
+header li a{
+  font-size: 18px;
+  color: #333;
+}
+
+.wrap {
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+}
+.pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+}
+.title::before,
+.title::after {
+  content: '/';
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  left: -45px;
+  top: -5px;
+  transform: rotate(20deg)
+}
+.title::after {
+  left: auto;
+  right: -45px;
+}
+
+.bg1 {
+  margin-bottom: 20px;
+}
+.bg1 .pos {
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bg1 h1 {
+  color: #fff;
+  font-size: 60px;
+}
+.bg1 p {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.bg1 a,
+.demo .more {
+  border-radius: 25px;
+  background: #0099ff;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+}
+
+.bg2 {
+  max-width: 100%;
+}
+.bg2 .title {
+  top: 50%;
+  margin-top: -50%;
+}
+
+.content p {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.8;
+  margin: 50px auto 100px;
+}
+
+.bg3 {
+  display: inline-block;
+}
+.bg3 .title {
+  color: #333;
+}
+.bg3 .title::before,
+.bg3 .title::after {
+  color: #333;
+}
+.bg3 li {
+  float: left;
+  width: 33.33%;
+  position: relative;
+}
+.bg3 .pos {
+  height: auto;
+  bottom: 0;
+  top: auto;
+}
+.bg3 .pos h3 {
+  color: #fff;
+  font-size: 32px;
+  text-align: left;
+  margin: 0 0 10px 30px;
+  font-weight: 400;
+}
+.bg3 .pos span {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  margin: 0 0 30px 30px;
+}
+.bg3 .pos a {
+  display: none;
+  float: left;
+  background: #fff;
+  padding: 10px 30px;
+  color: #333;
+  margin: 0px 0 20px 30px;
+}
+.bg3 .mask {
+  display: none;
+}
+.bg3 .active .mask {
+  display: block;
+}
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5)
+}
+.bg3 .active .pos {
+  bottom: 25%;
+}
+.bg3 .active .pos a{
+  display: block;
+}
+
+.demo {
+
+}
+.demo .title {
+  margin: 30px 0;
+  color: #333;
+}
+.demo .title::before,
+.demo .title::after {
+  color: #333;
+}
+.demo li {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+}
+.demo li:nth-child(3n) {
+  margin-right: 0;
+}
+.demo li .main{
+  position: relative;
+}
+.demo li .pos{
+  display: none;
+  background: rgba(0,0,0,0.5);
+}
+.demo li.active .pos{
+  display: block;
+}
+.demo .pos a {
+  background: #fff;
+  padding: 10px 40px;
+  color: #333;
+  margin-top: -50%;
+  font-size: 18px;
+  color: #333;
+  position: relative;
+  top: 50%;
+}
+.demo li span {
+  display: inline-block;
+  margin: 15px 0 25px 0;
+  font-size: 18px;
+}
+.demo .more {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.bg4 {
+  max-width: 100%;
+}
+.bg4 .mask {
+  background: rgba(0,0,0,0.5);
+}
+.bg4 .pos {
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.bg4 .logo {
+  width: 170px;
+  margin-bottom: 20px;
+}
+.bg4 span,
+.bg4 a {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin: 5px 0;
 }
