@@ -8,5 +8,4 @@ $(function () {
     $('.demo .active').removeClass('active')
     $(this).addClass('active')
   })
-  $('#fullpage').fullpage()
 })
