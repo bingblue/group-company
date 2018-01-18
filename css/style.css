@@ -114,7 +114,7 @@ font-weight: 900;
 	}
 /* Home Style */
 #tf-home{
-	background: url(../img/01.jpg);
+	background: url(http://bingblue.qiniudn.com/company/img/01.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -177,7 +177,7 @@ ul.about-list li span{
 
 /* Team Section */
 #tf-team{
-	background: url(../img/03.jpg);
+	background: url(http://bingblue.qiniudn.com/company/img/03.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -303,7 +303,7 @@ img.img-circle.team-img {
 
 /* Clients Section */
 #tf-clients{
-	background: url(../img/04.jpg);
+	background: url(http://bingblue.qiniudn.com/company/img/04.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -441,7 +441,7 @@ ol.type li a.active { font-weight: 700; }
 }
 /* Testimonials Section */
 #tf-testimonials{
-	background: url(../img/05.jpg);
+	background: url(http://bingblue.qiniudn.com/company/img/05.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -609,11 +609,15 @@ nav#footer p{
 #footer a .mask{
 	position: absolute;
 	top: -195px;
-	left: -55px;
+	left: -150px;
 	width: 150px;
 	height: 178px;
 	background: #fff;
+	border:1px solid #e3e3e3;
 	display: none;
+}
+#footer a .mask2{
+	left: 0px;
 }
 #footer a .mask h6{
 	margin: 0;
@@ -623,8 +627,8 @@ nav#footer p{
 	font-size: 16px;
 }
 #footer a .mask img{
-	width: 150px;
-	height: 150px;
+	width: 147px;
+	height: 147px;
 }
 #tf-clients .item img{
 	max-width: 158px;
@@ -646,4 +650,13 @@ body{
 	z-index: 99999;
 	font-size: 16px;
 	display: none;
+}
+ul.footer-social li {
+	margin-right: 50px;
+}
+img.img-circle.team-img{
+	background: #fff;
+}
+img.img-circle.team-img:hover{
+	background: #FCAC45;
 }
