@@ -141,6 +141,14 @@ function main() {
         isShow = false
       }, time)
     }
+    function clear() {
+      $('#phone').val('')
+      $('#name').val('')
+      $('#content').val('')
+      setTimeout(function(){
+        $('body').scrollTop(0)
+      },1000)
+    }
     $(function(){
       $('#sendEmail').click(function() {
         var phone = $('#phone').val()
@@ -163,8 +171,9 @@ function main() {
           data: data,
           success: function (data) {
             if(data.code == 200) {
-              var msg = '提交成功，我们会尽快联系您！'
-              createMsg(msg, 800)
+              var msg = '谢谢您选择滨清，我们会尽快联系您！'
+              createMsg(msg, 1000)
+
             }else{
               var msg = '提交失败，请直接发送邮件至:<br>business@bingblue.com，谢谢！'
               createMsg(msg, 2000)
