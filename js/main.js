@@ -173,7 +173,7 @@ function main() {
             if(data.code == 200) {
               var msg = '谢谢您选择滨清，我们会尽快联系您！'
               createMsg(msg, 1000)
-
+              clear()
             }else{
               var msg = '提交失败，请直接发送邮件至:<br>business@bingblue.com，谢谢！'
               createMsg(msg, 2000)
