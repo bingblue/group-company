@@ -146,7 +146,7 @@ function main() {
       $('#name').val('')
       $('#content').val('')
       setTimeout(function(){
-        $('body').scrollTop(0)
+        $(document).scrollTop(0)
       },1000)
     }
     $(function(){
