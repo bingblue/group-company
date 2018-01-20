@@ -152,16 +152,23 @@ function main() {
           return
         }
         var data = {
-          sendTo: 'business@bingblue.com',
-          content: '手机/微信:' + phone + ',姓名:' + name + ',需求:'+content
+          to: 'business@bingblue.com',
+          subject: ctx.body.subject,
+          html: '来自：首页底部免费咨询，手机/微信:' + phone + ',姓名:' + name + ',需求:' + content,
+          event: '/company/index'
         }
         $.ajax({
           type: "POST",
-          url: "/api/email/send",
+          url: "/new/api/email/send",
           data: data,
-          success: function () {
-            var msg = '提交成功，我们会尽快联系您！'
-            createMsg(msg, 800)
+          success: function (data) {
+            if(data.code == 200) {
+              var msg = '提交成功，我们会尽快联系您！'
+              createMsg(msg, 800)
+            }else{
+              var msg = '提交失败，请直接发送邮件至:<br>business@bingblue.com，谢谢！'
+              createMsg(msg, 2000)
+            }
           },
           error: function(){
             var msg = '提交失败，请直接发送邮件至:<br>business@bingblue.com，谢谢！'
