@@ -153,8 +153,8 @@ function main() {
         }
         var data = {
           to: 'business@bingblue.com',
-          subject: ctx.body.subject,
-          html: '来自：首页底部免费咨询，手机/微信:' + phone + ',姓名:' + name + ',需求:' + content,
+          subject: '来自：首页底部免费咨询',
+          html: '手机/微信:' + phone + ',姓名:' + name + ',需求:' + content,
           event: '/company/index'
         }
         $.ajax({
