@@ -114,13 +114,24 @@ font-weight: 900;
 	}
 /* Home Style */
 #tf-home{
-	background: url(http://bingblue.qiniudn.com/company/img/01.jpg);
+	background-attachment: fixed;
+	background-image: url(../img/01.jpg);
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: #cfcfcf;
 }
+/* #tf-home:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/01.jpg) center 0 no-repeat;
+  background-size: cover;
+} */
 
 #tf-home .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
@@ -659,4 +670,31 @@ img.img-circle.team-img{
 }
 img.img-circle.team-img:hover{
 	background: #FCAC45;
+}
+.portfolio-item {
+	border: 1px solid #eee;
+}
+@media (max-width: 603px){
+	#tf-contact label {
+		float: left !important;
+	}
+	ul.footer-social li {
+    margin-right: 0px;
+	}
+	#tf-home,
+	#tf-home .overlay,
+	#tf-team,
+	#tf-team .overlay,
+	#tf-clients,
+	#tf-clients .overlay,
+	#tf-testimonials,
+	#tf-testimonials .overlay {
+		background-attachment: initial;
+	}
+	#footer a .mask {
+		left: -131px;
+	}
+	#footer a .mask2 {
+		left: 18px;
+	}
 }

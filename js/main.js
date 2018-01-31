@@ -121,10 +121,15 @@ function main() {
       二维码显示
       ======================================*/
     $(function(){
-      $('#footer .footer-social a').mouseenter(function(){
+      $('#footer .footer-social a').mouseenter(function(event){
         $(this).find('.mask').show()
       }).mouseleave(function(){
         $(this).find('.mask').hide()
+      }).click(function(){
+        $(this).find('.mask').toggle()
+      })
+      $('#bs-example-navbar-collapse-1 a').click(function(){
+        $('#bs-example-navbar-collapse-1').removeClass('in')
       })
     })
 
