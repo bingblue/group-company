@@ -1,9 +1,9 @@
 version: '3.3'
 services:
- tmp_serverName:
-  image: tmp_imageName
+ bingblue-group-company:
+  image: registry.cn-shanghai.aliyuncs.com/bingblue/group-company:1
   ports:
-    - tmp_port:80
+    - 80:80
   networks:
     - bingblue
   deploy:
