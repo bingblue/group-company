@@ -1,0 +1,23 @@
+version: '3.6'
+services:
+  env.projectName:
+    image: registry.cn-shanghai.aliyuncs.com/bingblue/env.projectName:env.version
+    ports:
+      - env.port
+    networks:
+      - bingblue
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+
+networks:
+  bingblue:
+    driver: overlay
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.88.0.0/16

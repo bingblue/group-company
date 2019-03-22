@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <table cellpadding="0" cellspacing="0" style="width:750px;margin:0 auto;">
+    <tr>
+      <td>
+        <a href="https://bingblue.com" target="_blank">
+          <img src="http://bingblue.oss-cn-hangzhou.aliyuncs.com/company/img/logo.png" style="width:150px;margin:30px 0 20px;">
+        </a>
+        <hr style="border-color:envcolor">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h1 style="font-size:40px;color:envcolor;text-align:center;margin:50px auto;display:isSuccess">
+          ✔ 恭喜你，构建成功！
+        </h1>
+        <h1 style="font-size:40px;color:envcolor;text-align:center;margin:50px auto;display:isFail">
+          ✘ 很抱歉，构建失败！
+        </h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="font-size:25px;color:envcolor;font-weight:800;">
+          构建信息：
+        </div>
+        <hr style="border-color:envcolor">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul style="color:#fff;background:envcolor;padding:30px 50px;line-height:30px;margin:30px auto;">
+          <li>构建名称：env.JOB_NAME</li>
+          <li>构建结果：currentBuild.result</li>
+          <li>构建编号：env.BUILD_DISPLAY_NAME</li>
+          <li>开始时间：currentBuild.startTimeInMillis</li>
+          <li>构建时间：currentBuild.durationString</li>
+          <li>构建地址：<a style="color:#fff;text-decoration:none;" href="http://jenkins.bingblue.com/blue/organizations/jenkins/env.projectName/activity">
+            jenkins.bingblue.com/blue/
+          </a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr style="border-color:envcolor">
+        <a href="https://bingblue.com" target="_blank">
+          <img src="http://bingblue.oss-cn-hangzhou.aliyuncs.com/company/img/logo.png" style="width:150px;margin:5px 0 20px;float: right;">
+        </a>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
