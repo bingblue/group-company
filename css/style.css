@@ -188,7 +188,7 @@ ul.about-list li span{
 
 /* Team Section */
 #tf-team{
-	background: url(http://bingblue.qiniudn.com/company/img/03.jpg);
+	background: url(https://bingblue.oss-cn-hangzhou.aliyuncs.com/company/img/03.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -314,7 +314,7 @@ img.img-circle.team-img {
 
 /* Clients Section */
 #tf-clients{
-	background: url(http://bingblue.qiniudn.com/company/img/04.jpg);
+	background: url(https://bingblue.oss-cn-hangzhou.aliyuncs.com/company/img/04.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -452,7 +452,7 @@ ol.type li a.active { font-weight: 700; }
 }
 /* Testimonials Section */
 #tf-testimonials{
-	background: url(http://bingblue.qiniudn.com/company/img/05.jpg);
+	background: url(https://bingblue.oss-cn-hangzhou.aliyuncs.com/company/img/05.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
