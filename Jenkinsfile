@@ -16,7 +16,7 @@ node {
     }
     stage('Build & Push') {
       echo '构建并提交镜像'
-      docker.withRegistry('https://registry.cn-shanghai.aliyuncs.com', aliRegistryKey) {
+      docker.withRegistry('https://registry-internal.cn-shanghai.aliyuncs.com', aliRegistryKey) {
         def customImage = docker.build("bingblue/${env.projectName}:${env.version}")
         customImage.push()
       }
