@@ -60,6 +60,7 @@ def getHtml() {
   String html = readFile encoding: 'UTF-8', file: "${pwd()}/jenkins.html"
   boolean  result = currentBuild.result == 'SUCCESS'
   String isSuccess = result ? "block" : "none"
+  String hideCont = result ? "✘ 很抱歉，构建失败！" : "✔ 恭喜你，构建成功！"
   String isFail = (!result) ? "block" : "none"
   String color = result ? "#77af37" : "#d54c53"
   html = html.replaceAll("env.JOB_NAME", env.JOB_NAME)
@@ -69,6 +70,7 @@ def getHtml() {
   html = html.replaceAll("currentBuild.durationString", currentBuild.durationString)
   html = html.replaceAll("env.projectName", env.projectName)
   html = html.replaceAll("isSuccess", isSuccess)
+  html = html.replaceAll(hideCont, "")
   html = html.replaceAll("isFail", isFail)
   html = html.replaceAll("envcolor", color)
   return html
